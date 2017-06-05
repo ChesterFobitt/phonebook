@@ -7,6 +7,7 @@
         
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <script src="./js/angular.min.js"></script>
     </head>
     <body ng-controller="phonebookCtrl">
         <div class="wrapper-phonebook">
@@ -26,23 +27,23 @@
                 <a href="#" 
                    class="list-group-item list-item"
                    ng-repeat="user in phonebook | orderBy:sortingField:reverse"
-                   ng-click="consLog(user)">
+                   ng-if="phonebook.length">
                     <span class="item-name">
                         {{ user.name }}
                     </span>
                     <span class="item-phone">
                         {{ user.phone }}
                     </span>
-                    <button class="btn-delete" ng-click="deleteUser($index)">
+                    <button class="btn-delete" ng-click="deleteUser(user.id)">
                         <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                     </button>
                 </a>
+                <span ng-if="!phonebook.length">
+                    Пользователей не найдено.
+                </span>
             </div>
         </div>
-        <script src="./js/jquery.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
-        <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+        <script src="./js/ui-bootstrap-tpls.min.js"></script>
         <script src="./js/app.js"></script>
         
         <script type="text/ng-template" id="modal-form.html">
@@ -73,7 +74,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-primary" 
                             type="button" 
-                            ng-click="addNewPerson(newUser);$close()">Добавить</button>
+                            ng-click="addNewUser(newUser);$close()">Добавить</button>
                     <button class="btn btn-warning" 
                             type="button" 
                             ng-click="$close()">Отмена</button>
