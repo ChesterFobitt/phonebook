@@ -1,5 +1,6 @@
 .wrapper-phonebook {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin: 20px auto;
 }
     .controls {
