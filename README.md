@@ -1,3 +1,4 @@
 # Phonebook
-Test phonebook app from parcsis company
+Test phonebook app
+angularjs, localstorage, ui.bootstrap 
 
