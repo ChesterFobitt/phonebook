@@ -2,41 +2,41 @@
     width: 600px;
     margin: 20px auto;
 }
-    .controls {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+    .controls-left .glyphicon {
+        cursor: pointer;
+        padding: 3px 5px 4px 3px;
+        border: 1px solid #ccc;
+        color: #333333;
+        border-radius: 3px;
     }
-        .controls-left .glyphicon {
-            cursor: pointer;
-            padding: 3px 5px 4px 3px;
-            border: 1px solid #ccc;
-            color: #333333;
-            border-radius: 3px;
-        }
-    .list-item {
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
+.list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.list-item .item-name {
+    flex: 2;
+} 
+.list-item .item-phone {
+    flex: 1
+}
+    .btn-delete {
+        background: transparent;
+        border: 0;
+        color: #fb3e3e;
+        display: none;
+        position: absolute;
+        right: 12px;
+        outline: none;
     }
-        .list-item .item-name {
-            flex: 2;
-        } 
-        .list-item .item-phone {
-            flex: 1
-        }
-            .btn-delete {
-                background: transparent;
-                border: 0;
-                color: #fb3e3e;
-                display: none;
-                position: absolute;
-                right: 12px;
-                outline: none;
-            }
-                .btn-delete:hover {
-                    color:#b92c2c
-                }
-                .list-item:hover .btn-delete {
-                    display: block;
-                }
+    .btn-delete:hover {
+        color:#b92c2c
+    }
+    .list-item:hover .btn-delete {
+        display: block;
+    }
