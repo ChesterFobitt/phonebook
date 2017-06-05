@@ -1,4 +1,8 @@
 # Phonebook
 Test phonebook app
-angularjs, localstorage, ui.bootstrap 
+1. git clone
+2. npm i
+3. npm start
+
+*angularjs*, *localstorage*, *ui.bootstrap*
 
