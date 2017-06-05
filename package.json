@@ -1,0 +1,28 @@
+{
+  "name": "parcsis",
+  "version": "1.0.0",
+  "description": "Test phonebook app from parcsis company",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ChesterFobitt/phonebook.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Maxim Filippovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChesterFobitt/phonebook/issues"
+  },
+  "homepage": "https://github.com/ChesterFobitt/phonebook#readme",
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.5.0",
+    "express": "^4.15.3",
+    "opn": "^5.0.0"
+  }
+}
