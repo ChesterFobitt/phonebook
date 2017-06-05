@@ -20,7 +20,7 @@
                               ng-click="reverseSort()"></span>
                 </div>
                 <div class="controls-right">
-                    <button type="button" class="btn btn-default" ng-click="openAddForm()">+ Добавить</button>
+                    <button type="button" class="btn btn-default" ng-click="openModalForm()">+ Добавить</button>
                 </div>
             </div>
             <div class="list-group">
@@ -74,7 +74,8 @@
                 <div class="modal-footer">
                     <button class="btn btn-primary" 
                             type="button" 
-                            ng-click="addNewUser(newUser);$close()">Добавить</button>
+                            ng-click="addUser(newUser);$close()"
+                            ng-disabled="!newUser.name">Добавить</button>
                     <button class="btn btn-warning" 
                             type="button" 
                             ng-click="$close()">Отмена</button>

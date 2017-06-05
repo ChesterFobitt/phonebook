@@ -15,13 +15,13 @@
     $scope.reverseSort = function () {
       $scope.reverse = !$scope.reverse;
     }
-    $scope.openAddForm = function(){
+    $scope.openModalForm = function(){
       $uibModal.open({
           templateUrl: 'modal-form.html',
           scope: $scope
       });
     }
-    $scope.addNewUser = function(user) {    
+    $scope.addUser = function(user) {    
       var newId = new Date().getTime();
       $scope.phonebook.push({
         id: newId,
@@ -45,32 +45,3 @@
   }
 
 })();
-
-/*
-
-  
-    $scope.phonebook2 = [
-      {
-        id: 0,
-        name: 'Андрей Валерьевич',
-        phone: '+7(846) 334-25-63'
-      },
-      {
-        id: 1,
-        name: 'Виталий Алексеевич',
-        phone: '+7(846) 334-25-64'
-      },
-      {
-        id: 2,
-        name: 'Растислав Андреевич',
-        phone: '+7(846) 334-25-64'
-      },
-      {
-        id: 3,
-        name: 'Григорий Ивашкин',
-        phone: '+7(846) 334-25-65'
-      }
-    ];
-
-
-*/
