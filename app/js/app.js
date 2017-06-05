@@ -30,7 +30,7 @@
       });
       user.name = '';
       user.phone = '';
-
+      
       localStorage.setItem('Phonebook', JSON.stringify($scope.phonebook));
     }
     $scope.deleteUser = function( id ) {
